@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500&family=Gloock&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do header*/
+
+.portifolio-name {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: black;
+}
+
+.portifolio-name .image-first {
+    width: 30%;
+}
+
+.portifolio-name .name-text {
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.portifolio-name .name-text #joao {
+    font-family: 'Gloock', serif;
+    font-weight: 100;
+    color: #D7E3FC;
+    text-transform: uppercase;
+}
+
+.portifolio-name .name-text #portifolio {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 300;
+    color: #ABC4FF;
+    font-size: 140px;
+}
+
+/* Fim do estilos do header*/
+
+/* Estilos do container com informações sobre minimalismo*/
+
+.container-text-aside {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDF2FB;
+}
+
+.text-aside {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-title {
+    width: 100%;
+    font-family: 'Gloock', serif;
+    font-size: 48px;
+}
+
+.text-content {
+    font-family: 'Archivo', sans-serif;
+    font-size: 20px;
+    width: 40%;
+}
+
+.number-box {
+    display: flex;
+    width: 40%;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.number-content {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.number {
+    font-family: 'Gloock', serif;
+    font-size: 32px;
+}
+
+.number-text {
+    font-family: 'Archivo', sans-serif;
+    font-size: 16px;
+}
+
+/* Fim dos estilos do container com informações sobre minimalismo*/
+
+.carousel-images img {
+    width: 180px;
+}
+
+.carousel-images {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-carousel-images {
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EDF2FB;
+}
+
+.container-aboutme {
+    background-color: #EDF2FB;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-aboutme {
+    width: 85%;
+    height: 80%;
+    display: flex;
+}
+
+.projects-aboutme {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.jobs-aboutme {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.h-text-aboutme {
+    width: 100%;
+    font-family: 'Glook', serif;
+    font-size: 35px;
+}
+
+.content-about-project {
+    width: 100%;
+    font-family: 'Archivo', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.h-text-jobs {
+    width: 80%;
+    font-family: 'Glook', serif;
+    font-size: 35px;
+    margin-top: 60px;
+}
+.list-date-jobs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 60%;
+    font-family: 'Archivo', sans-serif;
+}
+
+.list-date-jobs p, li {
+    margin-bottom: 30px;
+}
+
+.list-date-jobs .list-jobs ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-jobs a {
+    text-decoration: underline;
+    color: #000;
+}
+
+.container-example-projects {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #EDF2FB;
+}
+
+.project-one {
+    width: 40%;
+    height: 80%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #D8E3F6;
+}
+
+.project-two {
+    width: 40%;
+    height: 80%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #D8E3F6;
+}
+
+.images-project {
+    background-color: #fff;
+    width: 83%;
+    height: 41%;
+    border-radius: 8px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+.images-project #img-click {
+    width: 50%;
+}
+
+.images-project #img-projects {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+    left: -100%;
+    transition: opacity 0.3s ease, left 0.6s ease;
+  }
+  
+.images-project:hover #img-projects {
+    opacity: 1;
+    left: 0;
+}
+  
+.content-p-project {
+    width: 80%;
+    display: flex;
+    text-align: center;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 500;
+}
+
+.title-projects {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 200;
+}
+
+.container-social-medias {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EDF2FB;
+}
+
+.text-and-social-medias {
+    width: 80%;
+    height: 70%;
+}
+
+.text-contact-me {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.text-contact-me h2 {
+    font-family: 'Glook', serif;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.links-social-meidas {
+    height: 40%;
+    width: 80%;
+}
+
+.links-social-meidas a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.2s;
+}
+
+.links-social-meidas i {
+    font-size: 70px;
+}
+
+.links-social-meidas a:hover {
+    color: #5f5f5f;
+}
+
+.container-footer {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.image-footer img {
+    height: 400px;
+    width: 400px;
+}
+
+.text-by-me {
+    font-family: 'Archivo', sans-serif;
+    color: #fff;
+}
+
+.name-text, .carousel-images, .text-contact-me {
+    visibility: hidden;
+}
+
+@media (max-width: 1080px) {
+    .carousel-images #ft1, #ft6 {
+        display: none;
+    }
+
+    .portifolio-name .name-text {
+        font-size: 25px;
+    }
+
+    .portifolio-name .name-text #portifolio {
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 720px) {
+    .carousel-images #ft5 {
+        display: none;
+    }
+
+    .portifolio-name {
+        flex-direction: column;
+    }
+    
+    .portifolio-name .name-text {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .portifolio-name .name-text #portifolio {
+        font-size: 70px;
+    }
+
+    .number-box {
+        width: 100%;
+    }
+
+    .project-one, .project-two {
+        height: 60%;
+    }
+
+    .portifolio-name .image-first {
+        width: 40%;
+    }
+
+    .title-projects {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 540px) {
+    .text-aside {
+        height: 90%;
+    }
+
+    .carousel-images #ft4 {
+        display: none;
+    }
+
+    .content-aboutme {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        margin: 30px;
+    }
+
+    .projects-aboutme {
+        height: 60%;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .jobs-aboutme {
+        height: 50%;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .container-aboutme {
+        height: 85vh;
+    }
+
+    .content-about-project {
+        font-size: 16px;
+    }
+
+    .content-p-project {
+        font-size: 13px;
+    }
+
+    .text-contact-me h2 {
+        font-size: 30px;
+    }
+
+    .links-social-meidas i {
+        font-size: 50px;
+    }
+
+    .container-example-projects {
+        flex-direction: column;
+    }
+
+    .project-one, .project-two {
+        width: 70%;
+        height: 50%;
+        margin: 10px 0 10px 0;
+    }
+
+    .text-content {
+        width: 70%;
+    }
+}
+
+@media (max-width: 400px) {
+    .carousel-images img {
+        width: 130px;
+    }
+
+    .image-footer img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .container-footer {
+        justify-content: space-around;
+    }
+
+    .text-by-me {
+        font-size: 10px;
+    }
+
+    .portifolio-name .name-text {
+        font-size: 15px;
+    }
+
+    .portifolio-name .name-text #portifolio {
+        font-size: 40px;
+    }
+
+    .portifolio-name .image-first {
+        width: 60%;
+    }
+
+    .list-date-jobs {
+        margin: 10px 0 10px 0;
+    }
+
+    .container-aboutme {
+        height: 95vh;
+    }
+
+    .links-social-meidas i {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 300px) {
+    .text-title {
+        font-size: 35px;
+    }
+
+    .number-box {
+        gap: 25px;
+    }
+    .h-text-jobs {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .list-date-jobs {
+        font-size: 10px;
+        width: 100%;
+    }
+
+    .title-projects {
+        font-size: 10px;
+    }
+}
